@@ -1,5 +1,5 @@
 # LTTS-Step-In
-Program to add perform addition, substraction, multiplication and division operation on two complex numbers.
+Program to perform addition, substraction, multiplication and division operation on two complex numbers.
 
 Documentation is done using Doxygen.
 
