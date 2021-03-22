@@ -1,6 +1,6 @@
 /**
  * @file myfunc.h
- * @author your name (you@domain.com)
+ * @author Debashish Dash
  * @brief functions for addition substraction multiplication and division of two complex number.
  * @version 0.1
  * @date 2021-03-23
