@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<conio.h>
+#include "myfunc.h"
+/*
 #include "addition.c"
 #include "substraction.c"
 #include "multiplication.c"
 #include "division.c"
-
+*/
 
 int main(){
     complex_t number1, number2, result;
