@@ -9,8 +9,6 @@
 #clean: 
 #	del /q *.exe   
   
-
-
 PROJ_NAME = Complex_Calculator
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
@@ -18,8 +16,7 @@ BUILD_DIR = Build
 
 SRC = src/comp.c
 
-TEST_SRC = test/test_main
-.c\
+TEST_SRC = test_main.c\
 unity/unity.c
 
 INC = -Iinc\
@@ -42,7 +39,7 @@ endif
 .PHONY : all test coverage run clean doc
 
 all:$(BUILD_DIR)
-	gcc test_main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
@@ -64,4 +61,4 @@ $(BUILD_DIR):
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
 	make clean -C doc
-	rmdir $(BUILD_DIR) doc/html
+	rmdir $(BUILD_DIR) doc/htm
